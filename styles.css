@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('fonts/Vazirmatn-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('fonts/Vazirmatn-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.persian-rtl {
+    direction: rtl !important;
+    text-align: right !important;
+    font-family: 'Vazirmatn', 'Tahoma', 'Iranian Sans', system-ui !important;
+    line-height: 1.6 !important;
+}
+
+.persian-rtl.mixed-content {
+    direction: rtl !important;
+    unicode-bidi: embed !important;
+}
+
+.persian-numbers {
+    font-feature-settings: "ss01" !important;
+}
+
+body[data-persian-rtl-enabled="false"] .persian-rtl {
+    direction: inherit !important;
+    text-align: inherit !important;
+    font-family: inherit !important;
+}
